@@ -22,14 +22,16 @@
     
     <!-- header -->
     <header class="header_area" style="background-image: url('./images/hero.jpg');">
-        <div class="bg-dark">
+        
+        <div class="header_wrapper">
             <div class="container">
-                <div class="row bg-dark">
-                    <div class="col-md-3 d-flex">
+                <div class="header_inner">
+                    <div class="logo_area">
                         <a href="index.html" class="align-self-center"><img src="./images/logo.png" alt="axit logo"></a>
+                        <i id="nav_toggle_btn" class="fa fa-bars"></i>
                     </div>
-                    <div class="col-md-9">
-                        <nav id="menu">
+                    <div class="menu_area" id="menu_area">
+                        <nav class="menu">
                             <ul id="nav" class="mb-auto">
                                 <li><a href="#">Features</a></li>
                                 <li><a href="#">About</a></li>
@@ -38,24 +40,29 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
+                        
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- hero -->
         <div class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <img src="./images/logo_2.png" alt="logo -2">
-                        <h1 class="thin_uppercase title my-4">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                        <img src="./images/white_divider.jpg" alt="divider">
-                        <p class="my-2">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error possimus quis, voluptas obcaecati assumenda praesentium optio expedita rerum facere impedit?
-                        </p>
-                        <button class="download mt-3">Download</button>
+                    <div class="col-sm-12 col-md-6 col-lg-8">
+                        <img src="./images/logo_2.png" class="logo_2 mb-4" alt="logo -2">
+                        
+                            <h1 class="thin_uppercase title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                            <img src="./images/white_divider.jpg" alt="divider">
+                            <p class="my-2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error possimus quis, voluptas obcaecati assumenda praesentium optio expedita rerum facere impedit?
+                            </p>
+                            <button class="download mt-3">Download</button>
+                        
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="get_started">
                             <p>try your <span class="orange-color">free</span> trial today</p>
                             <form action="" class="get_started_form">
@@ -101,26 +108,32 @@
     <section class="features_panel">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 d-flex flex-column">
+                <div class="col-sm-12 col-md-2 tabs">
                     <button id="tab1" class="tab active">tab 1</button>
                     <button id="tab2" class="tab">tab 2</button>
                     <button id="tab3" class="tab">tab 3</button>
                 </div>
-                <div class="col-md-6">
-                    <div id="" class="tab_content">
-                        <h3 class="thick_header pb-4">Tabs with soft transitioning effect</h3>
-                        <p class="pb-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis excepturi molestiae quos? Sunt rerum a sapiente fugiat, odio, dicta iusto aut nobis neque magnam animi error repudiandae assumenda. Ad voluptate, eum quod adipisci nisi harum eligendi? Reiciendis, libero tempora?
-                        </p>
-                        <p class="pb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rerum magnam laborum placeat doloribus quaerat.
-                        </p>
-    
-                        <a href="#" class="download_btn">Download</a>
+                <div class="col-sm-12 col-md-10 tab_content">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 text">
+                            <div id="" class=" text-left">
+                                <h3 class="thick_header pb-4">Tabs with soft transitioning effect</h3>
+                                <p class="pb-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis excepturi molestiae quos? Sunt rerum a sapiente fugiat, odio, dicta iusto aut nobis neque magnam animi error repudiandae assumenda. Ad voluptate, eum quod adipisci nisi harum eligendi? Reiciendis, libero tempora?
+                                </p>
+                                <p class="pb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rerum magnam laborum placeat doloribus quaerat.
+                                </p>
+            
+                                <a href="#" class="download_btn">Download</a>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12 col-md-6 w-100 img mt-4">
+                            <img src="./images/image_night.jpg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="./images/image_night.jpg" alt="">
+                    
                 </div>
             </div>
         </div>
@@ -294,13 +307,85 @@
         </div>
     </section>
 
+    <!-- testimonial -->
     <section class="testimonial_panel">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="thin_uppercase">What out customers are saying</h1>
+                    <img class="my-4" src="./images/orange_divider.jpg" alt="">
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. A, reprehenderit.</p>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <p class="testimonial_message">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptates, veritatis necessitatibus sunt atque ab? Sed a distinctio ipsam atque placeat quidem soluta. Ullam, quae. Odit eum aut ut fugit!
+                    </p>
+                    <div class="customer">
+                        <div class="avatar mr-3">
+                            <img src="./images/avatar.jpg" class="avatar" alt="">
+                        </div>
+                        <div class="detail">
+                            <h5>Khalil Ahmad</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <p class="testimonial_message">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptates, veritatis necessitatibus sunt atque ab? Sed a distinctio ipsam atque placeat quidem soluta. Ullam, quae. Odit eum aut ut fugit!
+                    </p>
+                    <div class="customer">
+                        <div class="avatar mr-3">
+                            <img src="./images/avatar.jpg" class="avatar" alt="">
+                        </div>
+                        <div class="detail">
+                            <h5>Khalil Ahmad</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <p class="testimonial_message">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptates, veritatis necessitatibus sunt atque ab? Sed a distinctio ipsam atque placeat quidem soluta. Ullam, quae. Odit eum aut ut fugit!
+                    </p>
+                    <div class="customer">
+                        <div class="avatar mr-3">
+                            <img src="./images/avatar.jpg" class="avatar" alt="">
+                        </div>
+                        <div class="detail">
+                            <h5>Khalil Ahmad</h5>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
 
     <section class="custom_section" style="background-image: url('./images/custom_panel.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-light">
+                    <h1 class="thin_uppercase">Stylish Axur design</h1>
 
+                    <img src="./images/white_divider.jpg" alt="">
+
+                    <p class="my-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt temporibus iure debitis ipsum rerum ad incidunt, praesentium voluptatem. Cumque.
+                    </p>
+
+                    <a href="" class="mx-auto download">Download</a>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -309,8 +394,25 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="thin_uppercase">contact us</h1>
+                    <img src="./images/orange_divider.jpg" class="my-3" alt="Orange Divider">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odit nostrum mollitia expeditae.</p>
                 </div>
             </div>
+            <form action="#" class="contact_form my-5 text-center">
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-6">
+                        <input type="text" name="name" id="" placeholder="Name">
+                        <input type="email" name="name" id="" placeholder="Email">
+                        <input type="text" name="name" id="" placeholder="Subject">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <textarea name="" id="" placeholder="Message"></textarea>
+                        
+                    </div>
+                </div>
+
+                <input type="submit" value="Send Now">
+            </form>
         </div>
     </section>
 
@@ -328,6 +430,7 @@
         </div>
     </footer>
     <!-- javascript -->
+    <script src="./js/main.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
