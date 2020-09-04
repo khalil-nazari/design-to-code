@@ -1,4 +1,5 @@
 *.zip
+*.7z
 *.rar
 *.exe
 debug.log
